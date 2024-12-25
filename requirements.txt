@@ -1,0 +1,13 @@
+numpy
+opencv-python
+tensorflow
+keras
+flask
+pandas
+scipy
+matplotlib
+dlib
+imutils
+joblib
+argparse
+datetime
