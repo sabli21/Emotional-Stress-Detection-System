@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Monitoring Display</title>
+		<!-- <meta charset="utf-8" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
+  		<script type="text/javascript" src="static/assets/js/gauge.min.js"></script>
+  		<meta charset="utf-8">
+	    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	    <!-- ECharts 3 引入 -->
+	    <script src="{{url_for('static',filename = '/assets/js/jquery.min.js')}}"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+	</head>
+
+<body onload="initialize()">
+
+				<section id="banner" data-video="static/images/banner">
+					<div class="inner">
+						<header>
+							<h1>Real-time Stress Assessment</h1>
+							<h3>Our stress detection system helps you avoid burnout while working by</h3>
+							<p>- Constantly monitoring your stress levels </p>
+							<p>- Constantly monitoring your heart rate</p>
+							<p>- Alert you during dangerous stress levels</p>
+							<p>Your current health data is displayed here.<br />
+							<!-- designed by <a href="https://templated.co/">Templated</a> and released under the Creative Commons License.</p> -->
+						</header>
+						<a href="#main" class="more">Learn More</a>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+					<!-- Boxes -->
+						<div class="thumbnails">
+
+							<div class="box2">
+								<!-- <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+								<div class="inner">
+									<h3>Stress Monitor</h3>
+									<div id="main2" style="width:700px;height:600px;border:2px solid #ccc;padding:10px;">
+										<img id="bg" src="{{ url_for('predict') }}">
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+</body>
+
+</html>
